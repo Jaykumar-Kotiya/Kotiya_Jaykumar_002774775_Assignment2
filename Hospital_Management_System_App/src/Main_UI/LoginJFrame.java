@@ -4,7 +4,7 @@
  */
 package Main_UI;
 
-import UiSystemAdmin.SystemOptionJFrame;
+import UI_SystemAdmin.SystemAdminOption;
 import javax.swing.JOptionPane;
 
 /**
@@ -139,12 +139,12 @@ public class LoginJFrame extends javax.swing.JFrame {
         jLabel6.setName(""); // NOI18N
 
         jButton1.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(204, 204, 204));
+        jButton1.setForeground(new java.awt.Color(153, 153, 153));
         jButton1.setText("Clear");
         jButton1.setBorder(null);
 
         jButton2.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(204, 204, 204));
+        jButton2.setForeground(new java.awt.Color(153, 153, 153));
         jButton2.setText("Login");
         jButton2.setBorder(null);
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -230,27 +230,27 @@ public class LoginJFrame extends javax.swing.JFrame {
         String pw=userPasswordField.getText();
         
         if(un.equals("System Admin") && pw.equals("system")) {
-        SystemOptionJFrame obj=new SystemOptionJFrame();
+        SystemAdminOption obj=new SystemAdminOption();
         obj.setVisible(true);
         dispose();
         }
         else if(un.equals("Patient") && pw.equals("patient")) {
-        SystemOptionJFrame obj=new SystemOptionJFrame();
+        SystemAdminOption obj=new SystemAdminOption();
         obj.setVisible(true);
         dispose();
         }
         else if(un.equals("Hospital Admin") && pw.equals("hospital")) {
-        SystemOptionJFrame obj=new SystemOptionJFrame();
+        SystemAdminOption obj=new SystemAdminOption();
         obj.setVisible(true);
         dispose();
         }
         else if(un.equals("Community Admin") && pw.equals("community")) {
-        SystemOptionJFrame obj=new SystemOptionJFrame();
+        SystemAdminOption obj=new SystemAdminOption();
         obj.setVisible(true);
         dispose();
         }
         else if(un.equals("Doctor") && pw.equals("doctor")) {
-        SystemOptionJFrame obj=new SystemOptionJFrame();
+        SystemAdminOption obj=new SystemAdminOption();
         obj.setVisible(true);
         dispose();
         }
