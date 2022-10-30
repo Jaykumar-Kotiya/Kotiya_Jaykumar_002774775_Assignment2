@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package Mail_UI;
+package Main_UI;
 
 import UiSystemAdmin.SystemOptionJFrame;
 import javax.swing.JOptionPane;
@@ -233,8 +233,28 @@ public class LoginJFrame extends javax.swing.JFrame {
         SystemOptionJFrame obj=new SystemOptionJFrame();
         obj.setVisible(true);
         dispose();
-        
-        }else {
+        }
+        else if(un.equals("Patient") && pw.equals("patient")) {
+        SystemOptionJFrame obj=new SystemOptionJFrame();
+        obj.setVisible(true);
+        dispose();
+        }
+        else if(un.equals("Hospital Admin") && pw.equals("hospital")) {
+        SystemOptionJFrame obj=new SystemOptionJFrame();
+        obj.setVisible(true);
+        dispose();
+        }
+        else if(un.equals("Community Admin") && pw.equals("community")) {
+        SystemOptionJFrame obj=new SystemOptionJFrame();
+        obj.setVisible(true);
+        dispose();
+        }
+        else if(un.equals("Doctor") && pw.equals("doctor")) {
+        SystemOptionJFrame obj=new SystemOptionJFrame();
+        obj.setVisible(true);
+        dispose();
+        }
+        else {
             JOptionPane.showMessageDialog(rootPane, "Username or password is incorrect");
             un ="";
         }
