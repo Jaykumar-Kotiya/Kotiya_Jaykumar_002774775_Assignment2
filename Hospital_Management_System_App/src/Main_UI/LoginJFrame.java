@@ -4,6 +4,10 @@
  */
 package Main_UI;
 
+import UI_Community_admin.CommunityAdmin;
+import UI_Doctor.Doctor;
+import UI_Hospital_Admin.HospitalAdminOption;
+import UI_Patient.NearHospital;
 import UI_SystemAdmin.SystemAdminOption;
 import javax.swing.JOptionPane;
 
@@ -235,22 +239,22 @@ public class LoginJFrame extends javax.swing.JFrame {
         dispose();
         }
         else if(un.equals("Patient") && pw.equals("patient")) {
-        SystemAdminOption obj=new SystemAdminOption();
+        NearHospital obj=new NearHospital();
         obj.setVisible(true);
         dispose();
         }
         else if(un.equals("Hospital Admin") && pw.equals("hospital")) {
-        SystemAdminOption obj=new SystemAdminOption();
+        HospitalAdminOption obj=new HospitalAdminOption();
         obj.setVisible(true);
         dispose();
         }
         else if(un.equals("Community Admin") && pw.equals("community")) {
-        SystemAdminOption obj=new SystemAdminOption();
+        CommunityAdmin obj=new CommunityAdmin();
         obj.setVisible(true);
         dispose();
         }
         else if(un.equals("Doctor") && pw.equals("doctor")) {
-        SystemAdminOption obj=new SystemAdminOption();
+        Doctor obj=new Doctor();
         obj.setVisible(true);
         dispose();
         }

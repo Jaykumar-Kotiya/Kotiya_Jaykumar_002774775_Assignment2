@@ -4,6 +4,9 @@
  */
 package UI_Community_admin;
 
+import Main_UI.LoginJFrame;
+import UI_SystemAdmin.SystemAdminOption;
+
 /**
  *
  * @author jkoti
@@ -26,21 +29,132 @@ public class CommunityAdmin extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        workArea = new javax.swing.JPanel();
+        communityLable = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        CreateComm = new javax.swing.JButton();
+        ViewComm = new javax.swing.JButton();
+        Exit = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        workArea.setBackground(new java.awt.Color(0, 153, 153));
+
+        communityLable.setIcon(new javax.swing.ImageIcon("C:\\Users\\jkoti\\Downloads\\icons8-users-60.png")); // NOI18N
+
+        jLabel1.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("Community Administrator");
+
+        CreateComm.setBackground(new java.awt.Color(153, 153, 153));
+        CreateComm.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        CreateComm.setForeground(new java.awt.Color(255, 255, 255));
+        CreateComm.setText("Create data in Community");
+        CreateComm.setRolloverEnabled(false);
+        CreateComm.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CreateCommActionPerformed(evt);
+            }
+        });
+
+        ViewComm.setBackground(new java.awt.Color(153, 153, 153));
+        ViewComm.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        ViewComm.setForeground(new java.awt.Color(255, 255, 255));
+        ViewComm.setText("View data in Community");
+        ViewComm.setRolloverEnabled(false);
+        ViewComm.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ViewCommActionPerformed(evt);
+            }
+        });
+
+        Exit.setBackground(new java.awt.Color(153, 153, 153));
+        Exit.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        Exit.setForeground(new java.awt.Color(255, 255, 255));
+        Exit.setText("X");
+        Exit.setRolloverEnabled(false);
+        Exit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ExitActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout workAreaLayout = new javax.swing.GroupLayout(workArea);
+        workArea.setLayout(workAreaLayout);
+        workAreaLayout.setHorizontalGroup(
+            workAreaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(workAreaLayout.createSequentialGroup()
+                .addGap(40, 40, 40)
+                .addComponent(CreateComm, javax.swing.GroupLayout.PREFERRED_SIZE, 233, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(ViewComm, javax.swing.GroupLayout.PREFERRED_SIZE, 233, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(workAreaLayout.createSequentialGroup()
+                .addGap(24, 24, 24)
+                .addComponent(communityLable)
+                .addGroup(workAreaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(workAreaLayout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 462, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, workAreaLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 467, Short.MAX_VALUE)
+                        .addComponent(Exit)
+                        .addGap(23, 23, 23))))
+        );
+        workAreaLayout.setVerticalGroup(
+            workAreaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(workAreaLayout.createSequentialGroup()
+                .addGroup(workAreaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(workAreaLayout.createSequentialGroup()
+                        .addGap(19, 19, 19)
+                        .addComponent(communityLable, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(workAreaLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(Exit)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(18, 18, 18)
+                .addGroup(workAreaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(CreateComm)
+                    .addComponent(ViewComm))
+                .addContainerGap(257, Short.MAX_VALUE))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGap(0, 600, Short.MAX_VALUE)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(workArea, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(workArea, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void CreateCommActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CreateCommActionPerformed
+        CreateCommunity obj=new CreateCommunity();
+        obj.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_CreateCommActionPerformed
+
+    private void ViewCommActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ViewCommActionPerformed
+        ViewCommunity obj=new ViewCommunity();
+        obj.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_ViewCommActionPerformed
+
+    private void ExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ExitActionPerformed
+        SystemAdminOption obj=new SystemAdminOption();
+        obj.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_ExitActionPerformed
 
     /**
      * @param args the command line arguments
@@ -78,5 +192,11 @@ public class CommunityAdmin extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton CreateComm;
+    private javax.swing.JButton Exit;
+    private javax.swing.JButton ViewComm;
+    private javax.swing.JLabel communityLable;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JPanel workArea;
     // End of variables declaration//GEN-END:variables
 }

@@ -4,6 +4,7 @@
  */
 package UI_SystemAdmin;
 
+import UI_Community_admin.CommunityAdmin;
 import UI_Community_admin.CreateCommunity;
 import UI_Community_admin.ViewCommunity;
 import UI_Hospital_Admin.CreateHospitalDirectory;
@@ -39,7 +40,6 @@ public class SystemAdminOption extends javax.swing.JFrame {
         viewComm = new javax.swing.JButton();
         btnEditHospital = new javax.swing.JButton();
         btnEditComm = new javax.swing.JButton();
-        btnEditSystem = new javax.swing.JButton();
         viewHD = new javax.swing.JButton();
         viewSystem = new javax.swing.JButton();
 
@@ -92,17 +92,6 @@ public class SystemAdminOption extends javax.swing.JFrame {
             }
         });
 
-        btnEditSystem.setBackground(new java.awt.Color(153, 153, 153));
-        btnEditSystem.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        btnEditSystem.setForeground(new java.awt.Color(255, 255, 255));
-        btnEditSystem.setText("Edit");
-        btnEditSystem.setRolloverEnabled(false);
-        btnEditSystem.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnEditSystemActionPerformed(evt);
-            }
-        });
-
         viewHD.setBackground(new java.awt.Color(153, 153, 153));
         viewHD.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         viewHD.setForeground(new java.awt.Color(255, 255, 255));
@@ -143,9 +132,6 @@ public class SystemAdminOption extends javax.swing.JFrame {
                         .addGap(176, 176, 176)
                         .addComponent(btnEditComm, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(178, 178, 178)
-                        .addComponent(btnEditSystem, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(175, 175, 175)
                         .addComponent(btnEditHospital, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -174,17 +160,14 @@ public class SystemAdminOption extends javax.swing.JFrame {
                         .addComponent(viewComm)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(btnEditComm, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(systemLable, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(systemLable, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(0, 20, Short.MAX_VALUE)
-                        .addComponent(viewSystem)
-                        .addGap(7, 7, 7)
-                        .addComponent(btnEditSystem)
-                        .addGap(82, 82, 82))))
+                        .addGap(43, 43, 43)
+                        .addComponent(viewSystem)))
+                .addContainerGap(84, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -220,20 +203,16 @@ public class SystemAdminOption extends javax.swing.JFrame {
     }//GEN-LAST:event_viewHDActionPerformed
 
     private void viewCommActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewCommActionPerformed
-       ViewCommunity obj=new ViewCommunity();
+       CommunityAdmin obj=new CommunityAdmin();
         obj.setVisible(true);
         dispose();
     }//GEN-LAST:event_viewCommActionPerformed
 
     private void viewSystemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewSystemActionPerformed
-        ViewCommunity obj=new ViewCommunity();
+        SystemOption obj=new SystemOption();
         obj.setVisible(true);
         dispose();
     }//GEN-LAST:event_viewSystemActionPerformed
-
-    private void btnEditSystemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditSystemActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnEditSystemActionPerformed
 
     /**
      * @param args the command line arguments
@@ -273,7 +252,6 @@ public class SystemAdminOption extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnEditComm;
     private javax.swing.JButton btnEditHospital;
-    private javax.swing.JButton btnEditSystem;
     private javax.swing.JLabel communityLable;
     private javax.swing.JLabel hospitalLable;
     private javax.swing.JButton jButton7;
