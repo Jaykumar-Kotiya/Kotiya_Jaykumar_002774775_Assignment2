@@ -4,6 +4,8 @@
  */
 package UI_Patient;
 
+import UI_SystemAdmin.SystemOption;
+
 /**
  *
  * @author jkoti
@@ -27,27 +29,267 @@ public class ViewPatient extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        lblName = new javax.swing.JLabel();
+        lblPatientName = new javax.swing.JLabel();
+        lblPatientAge = new javax.swing.JLabel();
+        lblPatientComm = new javax.swing.JLabel();
+        lblPatientHouseNo = new javax.swing.JLabel();
+        lblPatientStreet = new javax.swing.JLabel();
+        lblPatientEmail = new javax.swing.JLabel();
+        lblPatientZip = new javax.swing.JLabel();
+        lblPatientName7 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        lblPatientNo = new javax.swing.JLabel();
+        lblPatientMobile = new javax.swing.JLabel();
+        lblPatientno = new javax.swing.JLabel();
+        btnback = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(0, 153, 153));
 
+        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\jkoti\\Downloads\\icons8-patient-100.png")); // NOI18N
+
+        jLabel1.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("Patient Details");
+
+        jLabel7.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel7.setText("Email");
+
+        jLabel6.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel6.setText("Mobile");
+
+        jLabel4.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setText("Age");
+
+        jLabel11.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel11.setText("Zip Code");
+
+        jLabel10.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel10.setText("Community");
+
+        jLabel9.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel9.setText("Street");
+
+        jLabel8.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel8.setText("House No");
+
+        jLabel5.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setText("Name");
+
+        jLabel12.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
+
+        lblName.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+
+        lblPatientName.setBackground(new java.awt.Color(204, 204, 204));
+        lblPatientName.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
+        lblPatientName.setForeground(new java.awt.Color(255, 255, 255));
+        lblPatientName.setText("Name");
+
+        lblPatientAge.setBackground(new java.awt.Color(204, 204, 204));
+        lblPatientAge.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
+        lblPatientAge.setForeground(new java.awt.Color(255, 255, 255));
+        lblPatientAge.setText("Name");
+
+        lblPatientComm.setBackground(new java.awt.Color(204, 204, 204));
+        lblPatientComm.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
+        lblPatientComm.setForeground(new java.awt.Color(255, 255, 255));
+        lblPatientComm.setText("Name");
+
+        lblPatientHouseNo.setBackground(new java.awt.Color(204, 204, 204));
+        lblPatientHouseNo.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
+        lblPatientHouseNo.setForeground(new java.awt.Color(255, 255, 255));
+        lblPatientHouseNo.setText("Name");
+
+        lblPatientStreet.setBackground(new java.awt.Color(204, 204, 204));
+        lblPatientStreet.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
+        lblPatientStreet.setForeground(new java.awt.Color(255, 255, 255));
+        lblPatientStreet.setText("Name");
+
+        lblPatientEmail.setBackground(new java.awt.Color(204, 204, 204));
+        lblPatientEmail.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
+        lblPatientEmail.setForeground(new java.awt.Color(255, 255, 255));
+        lblPatientEmail.setText("Name");
+
+        lblPatientZip.setBackground(new java.awt.Color(204, 204, 204));
+        lblPatientZip.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
+        lblPatientZip.setForeground(new java.awt.Color(255, 255, 255));
+        lblPatientZip.setText("Name");
+
+        lblPatientName7.setBackground(new java.awt.Color(204, 204, 204));
+        lblPatientName7.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
+        lblPatientName7.setForeground(new java.awt.Color(255, 255, 255));
+
+        jLabel13.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel13.setText("Patient NO");
+
+        lblPatientNo.setBackground(new java.awt.Color(204, 204, 204));
+        lblPatientNo.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
+        lblPatientNo.setForeground(new java.awt.Color(255, 255, 255));
+
+        lblPatientMobile.setBackground(new java.awt.Color(204, 204, 204));
+        lblPatientMobile.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
+        lblPatientMobile.setForeground(new java.awt.Color(255, 255, 255));
+        lblPatientMobile.setText("Name");
+
+        lblPatientno.setBackground(new java.awt.Color(204, 204, 204));
+        lblPatientno.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
+        lblPatientno.setForeground(new java.awt.Color(255, 255, 255));
+        lblPatientno.setText("Name");
+
+        btnback.setBackground(new java.awt.Color(153, 153, 153));
+        btnback.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        btnback.setForeground(new java.awt.Color(255, 255, 255));
+        btnback.setText("Back");
+        btnback.setRolloverEnabled(false);
+        btnback.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnbackActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 600, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(16, 16, 16)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel2)
+                        .addGap(47, 47, 47)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 462, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(8, 8, 8)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnback)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
+                                        .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(lblPatientno, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(lblPatientMobile, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(lblPatientZip, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(lblPatientEmail, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(lblPatientName, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(lblPatientAge, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(lblPatientComm, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(lblPatientStreet, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(lblPatientHouseNo, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(jPanel1Layout.createSequentialGroup()
+                                            .addComponent(lblName, javax.swing.GroupLayout.PREFERRED_SIZE, 285, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 261, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(lblPatientName7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 458, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(lblPatientNo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 458, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(23, 23, 23)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel5)
+                    .addComponent(jLabel12)
+                    .addComponent(lblName)
+                    .addComponent(lblPatientName))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel4)
+                    .addComponent(lblPatientAge))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel10)
+                    .addComponent(lblPatientComm))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel8)
+                    .addComponent(lblPatientHouseNo))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel9)
+                    .addComponent(lblPatientStreet))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel7)
+                    .addComponent(lblPatientEmail))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel11)
+                    .addComponent(lblPatientZip))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel6)
+                    .addComponent(lblPatientName7)
+                    .addComponent(lblPatientMobile))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel13)
+                    .addComponent(lblPatientNo)
+                    .addComponent(lblPatientno))
+                .addGap(13, 13, 13)
+                .addComponent(btnback))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 600, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -56,6 +298,12 @@ public class ViewPatient extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnbackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnbackActionPerformed
+        SystemOption obj=new SystemOption();
+        obj.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnbackActionPerformed
 
     /**
      * @param args the command line arguments
@@ -93,6 +341,31 @@ public class ViewPatient extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnback;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel lblName;
+    private javax.swing.JLabel lblPatientAge;
+    private javax.swing.JLabel lblPatientComm;
+    private javax.swing.JLabel lblPatientEmail;
+    private javax.swing.JLabel lblPatientHouseNo;
+    private javax.swing.JLabel lblPatientMobile;
+    private javax.swing.JLabel lblPatientName;
+    private javax.swing.JLabel lblPatientName7;
+    private javax.swing.JLabel lblPatientNo;
+    private javax.swing.JLabel lblPatientStreet;
+    private javax.swing.JLabel lblPatientZip;
+    private javax.swing.JLabel lblPatientno;
     // End of variables declaration//GEN-END:variables
 }

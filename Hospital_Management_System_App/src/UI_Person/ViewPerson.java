@@ -4,6 +4,8 @@
  */
 package UI_Person;
 
+import UI_SystemAdmin.SystemOption;
+
 /**
  *
  * @author jkoti
@@ -27,27 +29,227 @@ public class ViewPerson extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        btnback = new javax.swing.JButton();
+        jLabel8 = new javax.swing.JLabel();
+        lblPersonMobile = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        lblPersonZip = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        lblPersonEmail = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        lblPersonStreet = new javax.swing.JLabel();
+        lblPersonHouseNo = new javax.swing.JLabel();
+        lblPersonComm = new javax.swing.JLabel();
+        lblPersonAge = new javax.swing.JLabel();
+        lblPersonName = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(0, 153, 153));
 
+        jLabel5.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setText("Name");
+
+        jLabel1.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("Showing Person Details");
+
+        btnback.setBackground(new java.awt.Color(153, 153, 153));
+        btnback.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        btnback.setForeground(new java.awt.Color(255, 255, 255));
+        btnback.setText("Back");
+        btnback.setRolloverEnabled(false);
+        btnback.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnbackActionPerformed(evt);
+            }
+        });
+
+        jLabel8.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel8.setText("House No");
+
+        lblPersonMobile.setBackground(new java.awt.Color(204, 204, 204));
+        lblPersonMobile.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
+        lblPersonMobile.setForeground(new java.awt.Color(255, 255, 255));
+        lblPersonMobile.setText("Name");
+
+        jLabel9.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel9.setText("Street");
+
+        jLabel10.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel10.setText("Community");
+
+        lblPersonZip.setBackground(new java.awt.Color(204, 204, 204));
+        lblPersonZip.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
+        lblPersonZip.setForeground(new java.awt.Color(255, 255, 255));
+        lblPersonZip.setText("Name");
+
+        jLabel6.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel6.setText("Mobile");
+
+        lblPersonEmail.setBackground(new java.awt.Color(204, 204, 204));
+        lblPersonEmail.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
+        lblPersonEmail.setForeground(new java.awt.Color(255, 255, 255));
+        lblPersonEmail.setText("Name");
+
+        jLabel7.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel7.setText("Email");
+
+        lblPersonStreet.setBackground(new java.awt.Color(204, 204, 204));
+        lblPersonStreet.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
+        lblPersonStreet.setForeground(new java.awt.Color(255, 255, 255));
+        lblPersonStreet.setText("Name");
+
+        lblPersonHouseNo.setBackground(new java.awt.Color(204, 204, 204));
+        lblPersonHouseNo.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
+        lblPersonHouseNo.setForeground(new java.awt.Color(255, 255, 255));
+        lblPersonHouseNo.setText("Name");
+
+        lblPersonComm.setBackground(new java.awt.Color(204, 204, 204));
+        lblPersonComm.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
+        lblPersonComm.setForeground(new java.awt.Color(255, 255, 255));
+        lblPersonComm.setText("Name");
+
+        lblPersonAge.setBackground(new java.awt.Color(204, 204, 204));
+        lblPersonAge.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
+        lblPersonAge.setForeground(new java.awt.Color(255, 255, 255));
+        lblPersonAge.setText("Name");
+
+        lblPersonName.setBackground(new java.awt.Color(204, 204, 204));
+        lblPersonName.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
+        lblPersonName.setForeground(new java.awt.Color(255, 255, 255));
+        lblPersonName.setText("Name");
+
+        jLabel11.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel11.setText("Zip Code");
+
+        jLabel4.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setText("Age");
+
+        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\jkoti\\Downloads\\icons8-person-100.png")); // NOI18N
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 600, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(29, Short.MAX_VALUE)
+                .addComponent(jLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 462, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(27, 27, 27))
+            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createSequentialGroup()
+                    .addGap(14, 14, 14)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(btnback)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(lblPersonMobile, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(lblPersonZip, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(lblPersonEmail, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(lblPersonName, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(lblPersonAge, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(lblPersonComm, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(lblPersonStreet, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(lblPersonHouseNo, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addContainerGap(277, Short.MAX_VALUE)))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(14, 14, 14)
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(33, 33, 33)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(295, Short.MAX_VALUE))
+            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createSequentialGroup()
+                    .addContainerGap(126, Short.MAX_VALUE)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel5)
+                        .addComponent(lblPersonName))
+                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel4)
+                        .addComponent(lblPersonAge))
+                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel10)
+                        .addComponent(lblPersonComm))
+                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel8)
+                        .addComponent(lblPersonHouseNo))
+                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel9)
+                        .addComponent(lblPersonStreet))
+                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel7)
+                        .addComponent(lblPersonEmail))
+                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel11)
+                        .addComponent(lblPersonZip))
+                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel6)
+                        .addComponent(lblPersonMobile))
+                    .addGap(38, 38, 38)
+                    .addComponent(btnback)
+                    .addGap(16, 16, 16)))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -56,6 +258,12 @@ public class ViewPerson extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnbackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnbackActionPerformed
+        SystemOption obj=new SystemOption();
+        obj.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnbackActionPerformed
 
     /**
      * @param args the command line arguments
@@ -93,6 +301,25 @@ public class ViewPerson extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnback;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel lblPersonAge;
+    private javax.swing.JLabel lblPersonComm;
+    private javax.swing.JLabel lblPersonEmail;
+    private javax.swing.JLabel lblPersonHouseNo;
+    private javax.swing.JLabel lblPersonMobile;
+    private javax.swing.JLabel lblPersonName;
+    private javax.swing.JLabel lblPersonStreet;
+    private javax.swing.JLabel lblPersonZip;
     // End of variables declaration//GEN-END:variables
 }
